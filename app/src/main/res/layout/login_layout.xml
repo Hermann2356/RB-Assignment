@@ -71,7 +71,7 @@
         android:id="@+id/termsTxtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I read and agree to Term &amp;  Conditions"
+        android:text="I read and agree to Term &amp; Conditions"
         android:layout_toEndOf="@+id/checkbox"
         android:layout_alignBaseline="@+id/checkbox"
         android:layout_below="@+id/passwordEditTxt"
