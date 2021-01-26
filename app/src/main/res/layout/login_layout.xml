@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/signupTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupTxtView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/login_icon"
+        android:hint=" Name"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text_background"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/email_icon"
+        android:hint=" E-mail"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text_background"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/passwordEditTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/password_icon"
+        android:drawableEnd="@drawable/show_icon"
+        android:hint=" Password"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text_background"
+        tools:ignore="RtlCompat" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditTxt"
+        android:layout_alignStart="@+id/passwordEditTxt"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/termsTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I read and agree to Term &amp;  Conditions"
+        android:layout_toEndOf="@+id/checkbox"
+        android:layout_alignBaseline="@+id/checkbox"
+        android:layout_below="@+id/passwordEditTxt"
+        android:textSize="11sp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/termsTxtView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="CREATE ACCOUNT"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/alreadyMemberTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign in"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/createButton"
+        android:textSize="12sp"
+        android:layout_marginTop="40dp" />
+
+
+</RelativeLayout>
